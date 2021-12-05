@@ -11,29 +11,16 @@ const getSize = onresize = () => {
         changeImg.setAttribute("src", "images/hero-mobile.jpg");
     }
 }
-    getSize();
+getSize();
 
-const validateForm = addEventListener('submit',(e)=>{
+const validateForm = addEventListener('submit', (e) => {
     e.preventDefault()
     const inputVal = input.value.trim()
-
-    if(inputVal.includes('@')){
-        error.style.display = 'none';
-        form.innerHTML += `
-        <div class="working">
-           <span>Working :) your email is: ${inputVal}</span>
-        </div>
-        <button type="submit" value="Submit" ><img src="images/icon-arrow.svg" alt=""></button>
-      `; 
-
-    }else if(inputVal === '' || !inputVal.includes('@') ){
-
+    if (!inputVal.includes('@') || inputVal === '') {
         error.style.display = 'block';
-
-     
-        
+    } else if (inputVal.includes('@') || !inputVal === '') {
+        error.style.display = 'none';
     }
-
 });
 
 
