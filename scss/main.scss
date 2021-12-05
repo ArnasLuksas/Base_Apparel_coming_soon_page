@@ -81,6 +81,32 @@ body {
                     padding: 0.3rem 0 0.3rem 1.5rem;
                     font-size: 16px;
                 }
+                .error {
+                    display: none;
+                    position: relative;
+                    img {
+                        position: absolute;
+                        top: -37px;
+                        right: 110px;
+                    }
+                    span {
+                        position: absolute;
+                        top: 10px;
+                        left: 54px;
+                        color: $desaturated-red;
+                    }
+                  
+                }
+             
+                .working{
+                    span {
+                        position: absolute;
+                        top: 60px;
+                        left: 54px;
+                        color: $desaturated-red;
+                    }
+                }
+
                 button {
                     background-image: linear-gradient(to right, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
                     border-radius: 40px;
@@ -100,6 +126,7 @@ body {
                 input:focus {
                     border: 1px solid $dark-grayish;
                 }
+          
             }
         }
     }
@@ -107,8 +134,6 @@ body {
 
 @media (min-width: 1440px) {
     body {
-    
-
         .container {
             position: relative;
             max-width: 1440px;
@@ -117,12 +142,10 @@ body {
             margin: 3rem auto;
             box-shadow: 0px 0px 20px -12px #000000;
 
-
-
             background-image: url("../images/bg-pattern-desktop.svg");
-             background-position-y: -40px;
+            background-position-y: -40px;
             background-repeat: no-repeat;
-            header{
+            header {
                 position: absolute;
                 top: 30px;
                 left: 127px;
@@ -136,23 +159,33 @@ body {
 
                 .description {
                     width: 50%;
-                    h1{
+                    h1 {
                         width: 400px;
                         text-align: left;
                         margin: 200px 0 0 0;
                         font-size: 65px;
-                        letter-spacing: .8rem;
+                        letter-spacing: 0.8rem;
                     }
-                    p{
+                    p {
                         width: 405px;
                         margin: 0;
                         text-align: left;
                     }
-                    form{
+                    form {
                         width: 470px;
                         margin: 40px 0 0 -36px;
-                     
-                        button{
+                        .error {
+                            img {
+                                top: -37px;
+                                right: 130px;
+                            }
+                            span {
+                                top: 15px;
+                                left: 54px;
+                            }
+                        }
+
+                        button {
                             width: 95px;
                         }
                     }

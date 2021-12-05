@@ -74,6 +74,31 @@ body {
   font-size: 16px;
 }
 
+.container main .description form .error {
+  display: none;
+  position: relative;
+}
+
+.container main .description form .error img {
+  position: absolute;
+  top: -37px;
+  right: 110px;
+}
+
+.container main .description form .error span {
+  position: absolute;
+  top: 10px;
+  left: 54px;
+  color: #ce9797;
+}
+
+.container main .description form .working span {
+  position: absolute;
+  top: 60px;
+  left: 54px;
+  color: #ce9797;
+}
+
 .container main .description form button {
   background-image: -webkit-gradient(linear, left top, right top, from(#f8bfbf), to(#ee8c8c));
   background-image: linear-gradient(to right, #f8bfbf, #ee8c8c);
@@ -140,7 +165,7 @@ body {
     text-align: left;
     margin: 200px 0 0 0;
     font-size: 65px;
-    letter-spacing: .8rem;
+    letter-spacing: 0.8rem;
   }
   body .container main .description p {
     width: 405px;
@@ -150,6 +175,14 @@ body {
   body .container main .description form {
     width: 470px;
     margin: 40px 0 0 -36px;
+  }
+  body .container main .description form .error img {
+    top: -37px;
+    right: 130px;
+  }
+  body .container main .description form .error span {
+    top: 15px;
+    left: 54px;
   }
   body .container main .description form button {
     width: 95px;
