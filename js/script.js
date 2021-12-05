@@ -5,9 +5,9 @@ const span = document.querySelector('.error span');
 const form = document.querySelector('form')
 
 const getSize = onresize = () => {
-    if (innerWidth >= 1440) {
+    if (innerWidth >= 1439) {
         changeImg.setAttribute("src", "images/hero-desktop.jpg");
-    } else if (innerWidth < 1440) {
+    } else if (innerWidth < 1439) {
         changeImg.setAttribute("src", "images/hero-mobile.jpg");
     }
 }
