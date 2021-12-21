@@ -1,5 +1,19 @@
 # Frontend Mentor - Base Apparel coming soon page
 
+
+
+<h1><a href="https://trusting-visvesvaraya-942d78.netlify.app/">Live site</a></h1>
+
+
+## Technologies
+
+- HTML
+- SCSS + media queries
+- JavaScript
+
+
+
+
 ![Design preview for the Base Apparel coming soon page coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
